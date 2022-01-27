@@ -40,6 +40,7 @@ exports.WHITELIST_CONTRACT_ADDRESS =
   exports.INITIALIZE_LIBRARY_ADDRESS =
   exports.VERIFIER_LIBRARY_ADDRESS =
   exports.ARTIFACT_UTILS_LIBRARY_ADDRESS =
+  exports.SPECIALS_LIBRARY_ADDRESS =
   exports.PLANET_LIBRARY_ADDRESS =
   exports.UTILS_LIBRARY_ADDRESS =
   exports.START_BLOCK =
@@ -49,52 +50,56 @@ exports.WHITELIST_CONTRACT_ADDRESS =
 /**
  * The name of the network where these contracts are deployed.
  */
-exports.NETWORK = 'xdai';
+exports.NETWORK = 'localhost';
 /**
  * The id of the network where these contracts are deployed.
  */
-exports.NETWORK_ID = 100;
+exports.NETWORK_ID = 31337;
 /**
  * The block in which the DarkForestCore contract was deployed.
  */
-exports.START_BLOCK = 19397418;
+exports.START_BLOCK = 0;
 /**
  * The address for the DarkForestUtils library.
  */
-exports.UTILS_LIBRARY_ADDRESS = '0xc321028EFDF94A838A1d96c32Df17598d3A5bDDc';
+exports.UTILS_LIBRARY_ADDRESS = '0x1aE9623899dDc2bB42217eF985a3d98E6E7623C1';
 /**
  * The address for the DarkForestPlanet library.
  */
-exports.PLANET_LIBRARY_ADDRESS = '0x721A137df0F8fC2DD30eb47a05233477d47fD29A';
+exports.PLANET_LIBRARY_ADDRESS = '0x500cf53555c09948f4345594F9523E7B444cD67E';
+/**
+ * The address for the DarkForestSpecialWeapons library.
+ */
+exports.SPECIALS_LIBRARY_ADDRESS = '0xc2EEd1AdAAe36B640f64c06FeF8Cd32F7473afAA';
 /**
  * The address for the DarkForestArtifactUtils library.
  */
-exports.ARTIFACT_UTILS_LIBRARY_ADDRESS = '0xbcc81C6636522cfBb2DC0ef0fcFdf62e287c6a87';
+exports.ARTIFACT_UTILS_LIBRARY_ADDRESS = '0x8950bab77f29E8f81e6F78AEA0a79bADD88Eeb13';
 /**
  * The address for the Verifier library.
  */
-exports.VERIFIER_LIBRARY_ADDRESS = '0x0B3537b6256385B7fA5ad595227F617aF40a4dda';
+exports.VERIFIER_LIBRARY_ADDRESS = '0x9696B08d71d3cBE15Fea4Da48B34a3b6576cCA16';
 /**
  * The address for the DarkForestInitialize library.
  */
-exports.INITIALIZE_LIBRARY_ADDRESS = '0xC84B257d24f423AFE5eDD81da1493d6BFc1dF830';
+exports.INITIALIZE_LIBRARY_ADDRESS = '0xBa82512922EDF35F6Fba9E652D822C8D02949888';
 /**
  * The address for the DarkForestLazyUpdate library.
  */
-exports.LAZY_UPDATE_LIBRARY_ADDRESS = '0xA924AD7aA8F2Bc972d634dE54AeB921cdE72571f';
+exports.LAZY_UPDATE_LIBRARY_ADDRESS = '0x6c452936A27F5Afc41bCC9Dd49a5bdedBdfA9b7A';
 /**
  * The address for the DarkForestCore contract.
  */
-exports.CORE_CONTRACT_ADDRESS = '0x61690202fA9f49d829A8823e54c184A60e16B003';
+exports.CORE_CONTRACT_ADDRESS = '0x8bFe976461F9D6a3A34be5025EAC343A5a2e124D';
 /**
  * The address for the DarkForestTokens contract.
  */
-exports.TOKENS_CONTRACT_ADDRESS = '0x0e2a8279C3ed4ee091096418dFA60D48d98cF04F';
+exports.TOKENS_CONTRACT_ADDRESS = '0x627a72bbE16416Ae722BA05876C5cB2dcb0Dc6BB';
 /**
  * The address for the DarkForestGetters contract.
  */
-exports.GETTERS_CONTRACT_ADDRESS = '0xeB4FFAe45C74eCdEf0E93Ba4be10aB592f7128B2';
+exports.GETTERS_CONTRACT_ADDRESS = '0x7B93F89fB7630d7a5b29019cfcDdcC4B7fd6e5D9';
 /**
  * The address for the Whitelist contract.
  */
-exports.WHITELIST_CONTRACT_ADDRESS = '0xfbB1c976DDAcC1523AdacFaFd8eF2168E9921d3a';
+exports.WHITELIST_CONTRACT_ADDRESS = '0x1d8d73c2b578dd2ac32c79753dD8Ff34ad4c2FbF';
