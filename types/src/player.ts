@@ -18,4 +18,6 @@ export type Player = {
   lastRevealTimestamp: number;
   lastClaimTimestamp: number;
   score: number;
+  usedSpecial : boolean;
+  stockpile: number;
 };

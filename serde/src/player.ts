@@ -21,5 +21,7 @@ export function decodePlayer(rawPlayer: RawPlayer): Player {
     lastRevealTimestamp: rawPlayer.lastRevealTimestamp.toNumber(),
     lastClaimTimestamp: rawPlayer.lastRevealTimestamp.toNumber(),
     score: rawPlayer.score.toNumber(),
+    stockpile: rawPlayer.stockpile.toNumber(),
+    usedSpecial: rawPlayer.usedSpecial
   };
 }
