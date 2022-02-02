@@ -13,6 +13,7 @@ export const enum ContractMethodName {
   UPGRADE = 'upgradePlanet',
   BUY_HAT = 'buyHat',
   PLANET_TRANSFER = 'transferOwnership',
+  USE_SPECIAL = "useSpecial",
   FIND_ARTIFACT = 'findArtifact',
   PROSPECT_PLANET = 'prospectPlanet',
   DEPOSIT_ARTIFACT = 'depositArtifact',
@@ -130,6 +131,20 @@ export type UnconfirmedPlanetTransfer = TxIntent & {
  * @hidden
  */
 export type SubmittedPlanetTransfer = UnconfirmedPlanetTransfer & SubmittedTx;
+
+/**
+ * @hidden
+ */
+ export type UnconfirmedUseSpecial = TxIntent & {
+  methodName: ContractMethodName.USE_SPECIAL;
+  planetId: LocationId;
+  index: number;
+};
+
+/**
+ * @hidden
+ */
+export type SubmittedUseSpecial = UnconfirmedUseSpecial & SubmittedTx;
 
 /**
  * @hidden
