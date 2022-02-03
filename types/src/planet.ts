@@ -14,6 +14,8 @@ import type {
   UnconfirmedUpgrade,
   UnconfirmedWithdrawArtifact,
   UnconfirmedWithdrawSilver,
+  UnconfirmedUseSpecial,
+  UnconfirmedSendToStockpile
 } from './transactions';
 import type { Upgrade, UpgradeState } from './upgrade';
 import type { Abstract } from './utility';
@@ -145,6 +147,7 @@ export type Planet = {
   unconfirmedActivateArtifact?: UnconfirmedActivateArtifact;
   unconfirmedDeactivateArtifact?: UnconfirmedDeactivateArtifact;
   unconfirmedWithdrawSilver?: UnconfirmedWithdrawSilver;
+  unconfirmedSendToStockpile?: UnconfirmedSendToStockpile;
   unconfirmedAddEmoji: boolean;
   unconfirmedClearEmoji: boolean;
   loadingServerState: boolean;

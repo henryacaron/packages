@@ -14,6 +14,7 @@ export const enum ContractMethodName {
   BUY_HAT = 'buyHat',
   PLANET_TRANSFER = 'transferOwnership',
   USE_SPECIAL = "useSpecial",
+  SEND_TO_STOCKPILE = "sendToStockpile",
   FIND_ARTIFACT = 'findArtifact',
   PROSPECT_PLANET = 'prospectPlanet',
   DEPOSIT_ARTIFACT = 'depositArtifact',
@@ -91,6 +92,18 @@ export type UnconfirmedMove = TxIntent & {
  * @hidden
  */
 export type SubmittedMove = UnconfirmedMove & SubmittedTx;
+
+export type UnconfirmedSendToStockpile = TxIntent & {
+  methodName: ContractMethodName.SEND_TO_STOCKPILE;
+  locationId: LocationId;
+  amount: number;
+};
+
+/**
+ * @hidden
+ */
+export type SubmittedSendToStockpile = UnconfirmedSendToStockpile & SubmittedTx;
+
 
 /**
  * @hidden
